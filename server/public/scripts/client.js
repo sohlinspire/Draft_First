@@ -31,6 +31,10 @@ myApp.config(function($routeProvider, $locationProvider) {
         }
       }
     })
+    .when('/start', {
+      templateUrl: '/views/templates/start.html',
+      controller: 'startController as sc'
+    })
     .otherwise({
       redirectTo: 'home'
     });
