@@ -35,6 +35,18 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/start.html',
       controller: 'startController as sc'
     })
+    .when('/idea', {
+      templateUrl: '/views/templates/idea.html',
+      controller: 'ideaController as ic'
+    })
+    .when('/organizer', {
+      templateUrl: '/views/templates/organizer.html',
+      controller: 'orgController as oc'
+    })
+    .when('/writing', {
+      templateUrl: '/views/templates/writing.html',
+      controller: 'writeController as wc'
+    })
     .otherwise({
       redirectTo: 'home'
     });
