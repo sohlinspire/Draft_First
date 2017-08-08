@@ -1,15 +1,15 @@
-CREATE TABLE "user" (
-  id SERIAL PRIMARY KEY,
-  username VARCHAR(25),
-  password VARCHAR(25)
+CREATE TABLE "users" (
+  "id" serial primary key,
+  "username" varchar(80) not null UNIQUE,
+  "password" varchar(240) not null
 );
 
-INSERT INTO "user" (name, password)
+INSERT INTO "users" (username, password)
 VALUES ('Bob', 1234);
 
 CREATE TABLE "user_writing" (
   id SERIAL PRIMARY KEY,
-  user_id INT REFERENCES "user",
+  user_id INT REFERENCES "users",
   writing VARCHAR (100000)
 );
 

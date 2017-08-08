@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 /// Routes ///
 myApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('');
-  console.log('myApp -- config')
+  console.log('myApp -- config');
   $routeProvider
     .when('/home', {
       templateUrl: '/views/templates/home.html',
@@ -33,19 +33,39 @@ myApp.config(function($routeProvider, $locationProvider) {
     })
     .when('/start', {
       templateUrl: '/views/templates/start.html',
-      controller: 'startController as sc'
+      controller: 'startController as sc',
+      resolve: {
+        getuser : function(UserService){
+          return UserService.getuser();
+        }
+      }
     })
     .when('/idea', {
       templateUrl: '/views/templates/idea.html',
-      controller: 'ideaController as ic'
+      controller: 'ideaController as ic',
+      resolve: {
+        getuser : function(UserService){
+          return UserService.getuser();
+        }
+      }
     })
     .when('/organizer', {
       templateUrl: '/views/templates/organizer.html',
-      controller: 'orgController as oc'
+      controller: 'orgController as oc',
+      resolve: {
+        getuser : function(UserService){
+          return UserService.getuser();
+        }
+      }
     })
     .when('/writing', {
       templateUrl: '/views/templates/writing.html',
-      controller: 'writeController as wc'
+      controller: 'writeController as wc',
+      resolve: {
+        getuser : function(UserService){
+          return UserService.getuser();
+        }
+      }
     })
     .otherwise({
       redirectTo: 'home'

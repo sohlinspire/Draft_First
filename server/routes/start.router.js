@@ -13,8 +13,8 @@ router.get('/', function(req, res) {
       res.sendStatus(500);
     } else {
       //GET tasks from the database
-      var queryText = 'SELECT * FROM "user_writing"';
-      db.query(queryText, function(errorMakingQuery, result) {
+      var queryText = 'SELECT * FROM "users" JOIN "user_writing" ON "users"."id" = "user_writing"."user_id" WHERE "users"."id"=$1;';
+      db.query(queryText, [req.user.id], function(errorMakingQuery, result) {
         done();
         if (errorMakingQuery) {
           console.log('Attempted to query with', queryText);
