@@ -1,5 +1,7 @@
 myApp.factory('DataService', function(){
     var data =
+        // object to populate fields in idea.html,
+        // organizer.html, and writing.html
         {
             idea: '',
             who: '',
@@ -9,7 +11,6 @@ myApp.factory('DataService', function(){
             why: '',
             how: ''
         };
-
     return {
         data: data
     };

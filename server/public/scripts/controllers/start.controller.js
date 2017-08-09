@@ -3,7 +3,7 @@ myApp.controller('startController', function($http){
   var sc = this;
 
   getWritingList();
-  //this controller loads when For Rent is clicked on the nav.html
+  //this function GETS the user's writing from the database
   function getWritingList() {
     $http.get('/start').then(function(response) {
       console.log(response.data.arrayOfWriting);
