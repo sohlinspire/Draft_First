@@ -1,4 +1,4 @@
-myApp.controller('startController', function(DataService, $http){
+myApp.controller('startController', function(UserService, DataService, $http){
   console.log('startController loaded');
   var sc = this;
 
