@@ -7,8 +7,8 @@
       <tbody>
         <tr class="form-group active">
           <td class="col-sm-8"><p class="teaser">{{list.writing | limitTo:100}}...</p></td>
-          <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs col-sm-2" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-          <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs col-sm-2" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+          <td><a href="#/writing"><p data-placement="top" data-toggle="tooltip" title="Edit"><button ng-click="sc.getStoryForUpdate($index)" class="btn btn-primary btn-xs col-sm-2" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></a></td>
+          <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button ng-click="sc.deleteStory(list.id)" class="btn btn-danger btn-xs col-sm-2" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
         </tr>
       </tbody>
     </table>

@@ -9,4 +9,6 @@
   <p>How? {{wc.data.how}}</p>
 </div>
 <textarea rows="4" cols="50" ng-model="wc.postStory"></textarea>
-<a href="#/start"<button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save Writing</button></a>
+<!-- <a href="#/start"--><button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save New Writing</button>
+<textarea rows="4" cols="50">{{wc.data.story.writing}}</textarea>
+<button class="btn btn-primary btn-lg" ng-click="wc.updateStory()">Update Writing</button>

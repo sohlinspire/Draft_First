@@ -11,4 +11,13 @@ myApp.controller('writeController', function(DataService, $http){
           console.log('added story', response);
         });
     };//end of addStory()
+
+    vm.updateStory = function(story) {
+      console.log('update story', story);
+      //   $http.put().then(function(response) {
+      //   console.log('added story', response);
+      //   getWritingList();
+      //   });
+      };//end of addStory()
+
 });//end of controller
