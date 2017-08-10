@@ -10,6 +10,6 @@ myApp.controller('startController', function($http){
       sc.writingList = response.data.arrayOfWriting;
       console.log(sc.writingList);
     });
-  }
+  }//end of getWritingList()
 
-});
+});//end of controller

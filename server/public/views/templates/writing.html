@@ -8,5 +8,5 @@
   <p>Why? {{wc.data.why}}</p>
   <p>How? {{wc.data.how}}</p>
 </div>
-<textarea rows="4" cols="50">Start story here</textarea>
-<button class="btn btn-primary btn-lg" onclick="location.href='#/start';">Save Writing</button>
+<textarea rows="4" cols="50" ng-model="wc.postStory"></textarea>
+<button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save Writing</button>
