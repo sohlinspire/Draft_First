@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-/// Routes ///
+/// Routes 'ui.bootstrap'///
 myApp.config(function($routeProvider, $locationProvider) {
   $locationProvider.hashPrefix('');
   console.log('myApp -- config');
@@ -17,7 +17,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/user.html',
       controller: 'UserController as uc',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }
@@ -26,7 +26,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/info.html',
       controller: 'InfoController',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }
@@ -35,7 +35,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/start.html',
       controller: 'startController as sc',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }
@@ -44,7 +44,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/idea.html',
       controller: 'ideaController as ic',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }
@@ -53,7 +53,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/organizer.html',
       controller: 'orgController as oc',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }
@@ -62,7 +62,7 @@ myApp.config(function($routeProvider, $locationProvider) {
       templateUrl: '/views/templates/writing.html',
       controller: 'writeController as wc',
       resolve: {
-        getuser : function(UserService){
+        getuser: function(UserService) {
           return UserService.getuser();
         }
       }

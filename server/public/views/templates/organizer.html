@@ -1,37 +1,39 @@
 <!-- text typed on DOM is being sent on click to the writing controller -->
 <div>
-<div>
-  <table  class="table table-borderless">
-    <thead>
-    </thead>
-    <tbody>
-      <tr class="form-group active">
-        <td class="col-sm-4"></td>
-        <td class="col-sm-4">WHO?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.who"></td>
-        <td class="col-sm-4"></td>
-      </tr>
-      <tr class="form-group">
-        <td class="col-sm-4">HOW?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.how"></td>
-        <td class="col-sm-4"></td>
-        <td class="col-sm-4">WHAT?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.what"></td>
-      </tr>
-      <tr class="form-group active">
-        <td class="col-sm-4"></td>
-        <td class="col-sm-4 align-middle"><p>{{oc.data.idea}}</p></td>
-        <td class="col-sm-4"></td>
-      </tr>
-      <tr class="form-group">
-        <td class="col-sm-4">WHY?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.why"></td>
-        <td class="col-sm-4"></td>
-        <td class="col-sm-4">WHERE?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.where"></td>
-      </tr>
-      <tr class="form-group active">
-        <td class="col-sm-4"></td>
-        <td class="col-sm-4">WHEN?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.when"></td>
-        <td class="col-sm-4"></td>
-      </tr>
-    </tbody>
-  </table>
-  <button class="btn btn-primary btn-lg" onclick="location.href='#/writing';">Begin Writing</button>
-</div>
+  <div>
+    <table class="table table-borderless">
+      <thead>
+      </thead>
+      <tbody>
+        <tr class="form-group active">
+          <td class="col-sm-4"></td>
+          <td class="col-sm-4">WHO?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.who"></td>
+          <td class="col-sm-4"></td>
+        </tr>
+        <tr class="form-group">
+          <td class="col-sm-4">HOW?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.how"></td>
+          <td class="col-sm-4"></td>
+          <td class="col-sm-4">WHAT?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.what"></td>
+        </tr>
+        <tr class="form-group active">
+          <td class="col-sm-4"></td>
+          <td class="col-sm-4 center">
+            <p>{{oc.data.idea}}</p>
+          </td>
+          <td class="col-sm-4"></td>
+        </tr>
+        <tr class="form-group">
+          <td class="col-sm-4">WHY?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.why"></td>
+          <td class="col-sm-4"></td>
+          <td class="col-sm-4">WHERE?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.where"></td>
+        </tr>
+        <tr class="form-group active">
+          <td class="col-sm-4"></td>
+          <td class="col-sm-4">WHEN?<input class="form-control input-lg" id="inputlg" type="text" ng-model="oc.data.when"></td>
+          <td class="col-sm-4"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary btn-lg" onclick="location.href='#/writing';">Begin Writing</button>
+  </div>
 </div>

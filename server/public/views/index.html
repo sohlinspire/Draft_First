@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Draft First</title>
-        <link rel="stylesheet" href="styles/style.css">
 
-        <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
-        <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
-        <script type="text/javascript" src="scripts/client.js"></script>
-        <link rel="stylesheet" href="vendors/css/bootstrap.min.css"/>
-        <script type="text/javascript" src="scripts/controllers/info.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/login.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/user.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/start.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/idea.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/organizer.controller.js"></script>
-        <script type="text/javascript" src="scripts/controllers/writing.controller.js"></script>
-        <script type="text/javascript" src="scripts/services/user.service.js"></script>
-        <script type="text/javascript" src="scripts/services/data.service.js"></script>
+<head>
+  <title>Draft First</title>
+  <link rel="stylesheet" href="styles/style.css">
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    </head>
+  <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+  <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
+  <!-- UI Bootstrap Stuff -->
+  <script type="text/javascript" src="/vendor/css/ui-bootstrap.js"></script>
+  <script type="text/javascript" src="/vendor/css/ui-bootstrap-tpls.js"></script>
+  <link rel="stylesheet" href="/vendor/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/vendor/css/ui-bootstrap-csp.css" />
 
-    <body ng-app="myApp">
+  <script type="text/javascript" src="scripts/client.js"></script>
+  <script type="text/javascript" src="scripts/controllers/info.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/login.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/user.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/start.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/idea.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/organizer.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/writing.controller.js"></script>
+  <script type="text/javascript" src="scripts/services/user.service.js"></script>
+  <script type="text/javascript" src="scripts/services/data.service.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
 
-      <!--loads nav bar-->
-      <header ng-include="'/views/partials/header.html'"></header>
+  <body ng-app="myApp">
 
-      <!--check client.js for more info-->
-      <main ng-view></main>
+    <!--loads nav bar-->
+    <header ng-include="'/views/partials/header.html'"></header>
 
-    </body>
+    <!--check client.js for more info-->
+    <main ng-view></main>
+
+  </body>
+
 </html>

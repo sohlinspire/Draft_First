@@ -15,7 +15,9 @@ body, html {
   color: #DDDDDD;
   padding: 15px;
 }
-
+.center {
+  text-align: center;
+}
 #entryForm {
   margin-top: 14px;
 }
