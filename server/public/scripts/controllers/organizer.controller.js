@@ -1,5 +1,5 @@
-myApp.controller('orgController', function(DataService){
+myApp.controller('orgController', function(UserService, DataService, $http){
   console.log('orgController loaded');
-  var vm = this;
-  vm.data = DataService.data;
+  var oc = this;
+  oc.data = DataService.data;
 });
