@@ -1,18 +1,24 @@
-<div class="container">
-  <h1 class="lead">Login</h1>
+<div class="background-login container" style="height: 1000px; width: 1500px">
+  <div class="col-sm-5"></div>
+
+  <div class="col-sm-2" style="margin-top: 450px">
   <h1 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
     <form ng-submit="lc.login()">
       <div>
-          <label for="username">Username:</label>
-          <input type="text" ng-model="lc.user.username" />
+        <label for="username">Username:</label>
+        <input type="text" ng-model="lc.user.username" />
       </div>
       <div>
-          <label for="password">Password:</label>
-          <input type="password" ng-model="lc.user.password" />
+        <label for="password">Password:</label>
+        <input type="password" ng-model="lc.user.password" />
       </div>
       <div>
-          <input class="btn btn-default" type="submit" name="submit" value="Log In" />
-          <a href="#register">Register</a>
+        <input class="btn btn-default" type="submit" name="submit" value="Log In" />
+        <a href="#register">Register</a>
       </div>
     </form>
+  </div>
+  <div class="col-sm-5" style="margin-top: 100px">
+    <h1 class="header">Draft First</h1>
+    <h3>A Creative Writing Workshop</h3>
 </div>

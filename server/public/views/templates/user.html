@@ -1,7 +1,18 @@
-<div ng-include="'views/partials/nav.html'"></div>
-<div class="container">
+<div class="background-login container" style="height: 1000px; width: 1500px">
+  <div class="col-sm-5"></div>
+
+  <div class="col-sm-2" style="margin-top: 425px">
     <h1 id="welcome" class="lead">Welcome, {{uc.userObject.userName}}!</h1>
     <button class="btn btn-default" ng-click="uc.userService.logout()">Log Out</button>
     <!-- button click brings user to start controller to see list of writings-->
     <button class="btn btn-primary btn-lg" onclick="location.href='#/start';">Begin Writing</button>
+  </div>
+
+  <div class="col-sm-5" style="margin-top: 100px">
+    <div>
+      <h1 class="header">Draft First</h1>
+      <h3>A Creative Writing Workshop</h3>
+    </div>
+  </div>
+
 </div>

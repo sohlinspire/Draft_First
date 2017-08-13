@@ -67,6 +67,15 @@ myApp.config(function($routeProvider, $locationProvider) {
         }
       }
     })
+    .when('/strategy', {
+      templateUrl: '/views/templates/strategy.html',
+      controller: 'strategyController as sc',
+      resolve: {
+        getuser: function(UserService) {
+          return UserService.getuser();
+        }
+      }
+    })
     .otherwise({
       redirectTo: 'home'
     });

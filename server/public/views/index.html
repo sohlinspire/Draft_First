@@ -13,7 +13,7 @@
   <script type="text/javascript" src="vendors/css/ui-bootstrap-tpls.js"></script>
   <link rel="stylesheet" href="vendors/css/bootstrap.min.css" />
   <link rel="stylesheet" href="vendors/css/ui-bootstrap-csp.css" />
-
+  <!-- CONTROLLERS -->
   <script type="text/javascript" src="scripts/controllers/info.controller.js"></script>
   <script type="text/javascript" src="scripts/controllers/login.controller.js"></script>
   <script type="text/javascript" src="scripts/controllers/user.controller.js"></script>
@@ -21,15 +21,14 @@
   <script type="text/javascript" src="scripts/controllers/idea.controller.js"></script>
   <script type="text/javascript" src="scripts/controllers/organizer.controller.js"></script>
   <script type="text/javascript" src="scripts/controllers/writing.controller.js"></script>
+  <script type="text/javascript" src="scripts/controllers/strategy.controller.js"></script>
+  <!-- SERVICES -->
   <script type="text/javascript" src="scripts/services/user.service.js"></script>
   <script type="text/javascript" src="scripts/services/data.service.js"></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 
   <body ng-app="myApp">
-
-    <!--loads nav bar-->
-    <header ng-include="'/views/partials/header.html'"></header>
 
     <!--check client.js for more info-->
     <main ng-view></main>

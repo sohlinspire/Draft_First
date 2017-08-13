@@ -1,7 +1,6 @@
 myApp.controller('ideaController', function(UserService, DataService, $http) {
   console.log('ideaController loaded');
   var vm = this;
-  // vm.data = {};
   vm.data = DataService.data;
 
 

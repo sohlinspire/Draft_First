@@ -6,14 +6,14 @@ body, html {
 }
 
 .instructions .container h1 {
-  font-size: 32px;
+  font-size: 100px;
   font-weight: 600;
 }
 
 .instructions {
   background-color: #333333;
   color: #DDDDDD;
-  padding: 15px;
+  text-align: right;
 }
 .center {
   text-align: center;
@@ -69,7 +69,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -79,4 +79,23 @@ li a {
 li a:hover {
   text-decoration: underline;
   color: #eee;
+}
+
+.background-start {
+  background-image: url("../vendors/images/handwriting_main.jpg");
+}
+
+.background-login {
+  background-image: url("../vendors/images/pexels-photo_pad_phone_laptop.jpg");
+}
+
+.table1 {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
+.header {
+  font-size: 100px;
+  font-weight: lighter;
+  letter-spacing: 7px;
 }

@@ -1,7 +1,9 @@
-<div>
-  <h1>List of Writings</h1>
+<header ng-include="'/views/partials/header.html'"></header>
+<body style="background-color: black;">
+<div class="background-start" style="height: 1000px; width: 1500px">
+  <h1 style="color: white">List of Writings</h1>
   <div ng-repeat="list in sc.writingList">
-    <table class="table table-borderless">
+    <table class="table1 table-borderless">
       <thead>
       </thead>
       <tbody>
@@ -26,3 +28,4 @@
     <button class="btn btn-primary btn-lg" onclick="location.href='#/idea';">New Writing</button>
   </div>
 </div>
+</body>
