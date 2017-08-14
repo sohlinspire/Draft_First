@@ -1,14 +1,18 @@
 <header ng-include="'/views/partials/header.html'"></header>
-<body style="background-color: black;">
+
 <div class="background-start" style="height: 1000px; width: 1500px">
-  <h1 style="color: white">List of Writings</h1>
-  <div ng-repeat="list in sc.writingList">
+  <div>
     <table class="table1 table-borderless">
       <thead>
+          <tr>
+            <th style="padding: 20px; font-size: 50px; font-family: serif; font-weight: lighter; letter-spacing: 2px;">List of Writings</th>
+            <th style="font-family: serif; font-size: 18px; font-weight: lighter; letter-spacing: 2px;">EDIT</th>
+            <th style="font-family: serif; font-size: 18px; font-weight: lighter; letter-spacing: 2px;">DELETE</th>
+          </tr>
       </thead>
-      <tbody>
+      <tbody style="font-size: 20px; color: white" ng-repeat="list in sc.writingList">
         <tr class="form-group active">
-          <td class="col-sm-8">
+          <td class="col-sm-8"  style="padding: 20px; font-family: serif; font-style: italic">
             <p class="teaser">{{list.writing | limitTo:100}}...</p>
           </td>
           <td>
