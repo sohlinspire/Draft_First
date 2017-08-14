@@ -1,6 +1,10 @@
 <header ng-include="'/views/partials/header.html'"></header>
 
-<div class="background-start" style="height: 1000px; width: 1500px">
+<div class="background-start">
+  <ul>
+    <li><a href="#/user">User Home</a></li>
+    <li><a href="#/info">About</a></li>
+  </ul>
   <div>
     <table class="table1 table-borderless">
       <thead>
@@ -12,7 +16,7 @@
       </thead>
       <tbody style="font-size: 20px; color: white" ng-repeat="list in sc.writingList">
         <tr class="form-group active">
-          <td class="col-sm-8"  style="padding: 20px; font-family: serif; font-style: italic">
+          <td class="col-sm-8"  style="padding: 12px; letter-spacing: 1px; font-family: serif; font-weight: lighter; font-style: italic">
             <p class="teaser">{{list.writing | limitTo:100}}...</p>
           </td>
           <td>
@@ -27,7 +31,7 @@
       </tbody>
     </table>
   </div>
-  <div class="row text-center">
+  <div class="row text-center" style="padding: 10px">
     <!-- button click brings user to idea controller to begin writing-->
     <button class="btn btn-primary btn-lg" onclick="location.href='#/idea';">New Writing</button>
   </div>

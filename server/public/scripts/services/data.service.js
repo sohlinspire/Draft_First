@@ -10,7 +10,9 @@ myApp.factory('DataService', function() {
       when: '',
       why: '',
       how: '',
-      story: ''
+      story: '',
+      strategy: '',
+      new: ''
     };
   return {
     data: data

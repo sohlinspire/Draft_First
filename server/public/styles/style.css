@@ -95,20 +95,34 @@ li a:hover {
 }
 
 .background-start {
+  height: 1000px;
+  width: 1500px;
+  margin: 0 auto;
   background-image: url("../vendors/images/handwriting_main.jpg");
 }
 
 .background-login {
+  height: 1000px;
+  width: 1500px;
+  margin: 0 auto;
   background-image: url("../vendors/images/pexels-photo_pad_phone_laptop.jpg");
 }
 
 .background-writing {
+  height: 1000px;
+  width: 1500px;
+  margin: 0 auto;
   background-image: url("../vendors/images/pexels-photo-paper.jpeg");
 }
 
 .table1 {
   width: 100%;
-  background: rgba(255,255,255,0);
+  background: rgba(0,0,0,.3);
+}
+
+.table2 {
+  width: 100%;
+  background: rgba(0,0,0,0);
 }
 
 .header {

@@ -1,31 +1,36 @@
 <header ng-include="'/views/partials/header.html'"></header>
-<div class="background-writing" style="height: 1000px; width: 1500px">
-<div>
-  <h1>Your Sentence</h1>
-  <textarea rows="4" cols="50" ng-model="sc.data"></textarea>
+<div class="background-writing">
+  <div style="padding-top: 50px">
+  <div class="col-sm-3">
+    <h1>Your Sentence</h1>
+    <textarea rows="4" cols="50" ng-model="sc.data.strategy"></textarea>
+  </div>
+  <p class="col-sm-1" style="padding-top: 100px; text-align: right; font-size: 50px; color: blue">&rarr;</p>
+  <div class="col-sm-3">
+  <div>
+    <h2>Create New Details</h2>
+  </div>
+  <div>
+    <p>When?</p>
+    <input type="text" name="" value="">
+  </div>
+  <div>
+    <p>What kind?</p>
+    <input type="text" name="" value="">
+  </div>
+  <div>
+    <p>Where?</p>
+    <input type="text" name="" value="">
+  </div>
+  <div class="">
+    <p>Who's?</p>
+    <input type="text" name="" value="">
+  </div>
 </div>
-<div>
-  <h2>Add Details To Your Sentence</h2>
-</div>
-<div>
-  <p>When?</p>
-  <input type="text" name="" value="">
-</div>
-<div>
-  <p>What kind?</p>
-  <input type="text" name="" value="">
-</div>
-<div>
-  <p>Where?</p>
-  <input type="text" name="" value="">
-</div>
-<div class="">
-  <p>Who's?</p>
-  <input type="text" name="" value="">
-</div>
-<div>
+<p class="col-sm-1" style="padding-top: 100px; font-size: 50px; color: blue">&rarr;</p>
+<div class="col-sm-4">
   <h3>Rewrite Your Sentence With New Details</h3>
-  <textarea rows="4" cols="50" ng-model="sc.data"></textarea>
-  <a href="#/start" <button class="btn btn-primary btn-lg" ng-click="sc.updateStory()">Update Sentence</button></a>
+  <textarea rows="4" cols="50" ng-model="sc.temptext"></textarea>
+  <button class="btn btn-primary btn-lg" ng-click="sc.transfertext()">Update Sentence</button>
 </div>
 </div>
