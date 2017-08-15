@@ -1,4 +1,4 @@
-myApp.controller('ideaController', function(UserService, DataService, $http) {
+myApp.controller('ideaController', function(UserService, DataService, $http, $location) {
   console.log('ideaController loaded');
   var vm = this;
   vm.data = DataService.data;
