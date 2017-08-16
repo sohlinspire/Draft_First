@@ -1,36 +1,81 @@
 <header ng-include="'/views/partials/header.html'"></header>
 <div class="background-writing">
-  <div style="padding-top: 50px">
-  <div class="col-sm-3">
-    <h1>Your Sentence</h1>
-    <textarea rows="4" cols="50" ng-model="sc.data.strategy"></textarea>
+  <button class="btn btn-primary" ng-click="swal()">Instructions</button>
+  <div class="row" style="padding: 25px">
+    <div class="col-sm-3">
+      <h1>Strategy 1</h1>
+      <h2>Your Sentence</h2>
+      <textarea rows="4" cols="50" ng-model="sc.data.strategy"></textarea>
+    </div>
+    <p class="col-sm-1" style="padding-top: 100px; text-align: right; font-size: 50px; color: blue">&rarr;</p>
+    <div class="col-sm-3">
+      <div>
+        <h2>Create New Details</h2>
+      </div>
+      <div>
+        <p>When?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>What kind?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Where?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Who's?</p>
+        <input type="text" name="" value="">
+      </div>
+    </div>
+    <p class="col-sm-1" style="padding-top: 100px; font-size: 50px; color: blue">&rarr;</p>
+    <div class="col-sm-4">
+      <h3>Rewrite Your Sentence With New Details</h3>
+      <textarea rows="4" cols="50" ng-model="sc.temptext"></textarea>
+      <button class="btn btn-primary" ng-click="sc.transfertext()">Update Sentence</button>
+    </div>
   </div>
-  <p class="col-sm-1" style="padding-top: 100px; text-align: right; font-size: 50px; color: blue">&rarr;</p>
-  <div class="col-sm-3">
-  <div>
-    <h2>Create New Details</h2>
+
+  <h1 style="font-size: 50px; color: blue; padding-left: 150px">OR</h1>
+
+  <div class="row" style="padding: 25px">
+    <div class="col-sm-3">
+      <h1>Strategy 2</h1>
+      <h2>Your Sentence</h2>
+      <textarea rows="4" cols="50" ng-model="sc.data.strategy"></textarea>
+    </div>
+    <p class="col-sm-1" style="padding-top: 100px; text-align: right; font-size: 50px; color: blue">&rarr;</p>
+    <div class="col-sm-3">
+      <div>
+        <h2>Create New Details</h2>
+      </div>
+      <div>
+        <p>Sounds Like?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Smells Like?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Looks Like?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Feels Like?</p>
+        <input type="text" name="" value="">
+      </div>
+      <div>
+        <p>Tastes Like?</p>
+        <input type="text" name="" value="">
+      </div>
+    </div>
+    <p class="col-sm-1" style="padding-top: 100px; font-size: 50px; color: blue">&rarr;</p>
+    <div class="col-sm-4">
+      <h3>Rewrite Your Sentence With New Details</h3>
+      <textarea rows="4" cols="50" ng-model="sc.temptext"></textarea>
+      <button class="btn btn-primary" ng-click="sc.transfertext()">Update Sentence</button>
+    </div>
   </div>
-  <div>
-    <p>When?</p>
-    <input type="text" name="" value="">
-  </div>
-  <div>
-    <p>What kind?</p>
-    <input type="text" name="" value="">
-  </div>
-  <div>
-    <p>Where?</p>
-    <input type="text" name="" value="">
-  </div>
-  <div class="">
-    <p>Who's?</p>
-    <input type="text" name="" value="">
-  </div>
-</div>
-<p class="col-sm-1" style="padding-top: 100px; font-size: 50px; color: blue">&rarr;</p>
-<div class="col-sm-4">
-  <h3>Rewrite Your Sentence With New Details</h3>
-  <textarea rows="4" cols="50" ng-model="sc.temptext"></textarea>
-  <button class="btn btn-primary btn-lg" ng-click="sc.transfertext()">Update Sentence</button>
-</div>
 </div>

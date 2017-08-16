@@ -23,9 +23,21 @@ myApp.controller('startController', function(UserService, DataService, $http) {
   //delete story from start,html
   sc.deleteStory = function(id) {
     console.log('delete');
-    $http.delete('/start/' + id).then(function(req, res) {
-      console.log("delete story");
-      getWritingList();
+    swal({
+      title: "Are you sure?",
+      text: "Your story will be gone forever!",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Yes, delete it!",
+      closeOnConfirm: false
+    }).then(function() {
+      $http.delete('/start/' + id)
+      .then(function(req, res) {
+        console.log("delete story");
+        getWritingList();
+        });
+      swal("Deleted!", "Your story has been deleted.", "success");
     });
   }; //end of deleteList()
 

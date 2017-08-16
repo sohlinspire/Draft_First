@@ -1,25 +1,21 @@
 <header ng-include="'/views/partials/header.html'"></header>
 <div class="background-writing">
-<!-- <div class="btn-group" uib-dropdown is-open="status.isopen">
-  <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
-        Button dropdown <span class="caret"></span>
-      </button>
-  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-    <li role="menuitem"><a href="#">Action</a></li>
-    <li role="menuitem"><a href="#">Another action</a></li>
-    <li role="menuitem"><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li role="menuitem"><a href="#">Separated link</a></li>
-  </ul>
-</div> -->
-<div class="col-sm-6"  style="margin-top: 150px; padding-left: 75px">
+  <div class="row" style="text-align: left; padding-top: 25px; padding-left: 35px">
+      <button type="button" class="btn btn-default" ng-click="ic.instructions()">INSTRUCTIONS</button>
+  </div>
+
+<div class="col-sm-6 row"  style="margin-top: 100px; padding-left: 75px">
   <p style="font-size: 25px; color: white; font-weight: light">Ideas are free. Enter yours below.</p>
   <!-- text typed on DOM is being sent on click to the organizer controller -->
   <textarea rows="4" cols="50" ng-model="ic.data.idea" name="" value=""></textarea>
-  <button class="btn btn-primary btn-lg" onclick="location.href='#/organizer';">Begin Writing</button>
+  <button class="btn btn-primary" onclick="location.href='#/organizer';">Begin Writing</button>
   <div>
     <p style="font-size: 18px; color: white; font-weight: light">If you are stuck, click below.</p>
-    <button class="btn btn-primary btn-lg" ng-click="ic.getRandomIdea()">Choose a Random Topic</button>
+    <button class="btn btn-primary" ng-click="ic.getRandomIdea()">Choose a Random Topic</button>
+  </div>
+  <div>
+    <p style="font-size: 18px; font-weight: light; margin-top: 100px;">Your ideas are saved here.</p>
+    <select></select>
   </div>
 </div>
 <div class="col-sm-6 row text-center">

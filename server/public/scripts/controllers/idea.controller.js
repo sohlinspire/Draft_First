@@ -3,7 +3,13 @@ myApp.controller('ideaController', function(UserService, DataService, $http, $lo
   var vm = this;
   vm.data = DataService.data;
 
-
+  vm.instructions = function(){
+    swal({
+    title: "Start With An Idea",
+    text: "Coming up wth an idea can be the most difficult part of the writing process. \nIf you have an idea already, enter it in the text box to get started. \nOtherwise, click the button for a random suggestion to get started.",
+    imageUrl: "../vendors/images/pexels-photo_chalk.jpg"
+    });
+  };
   //get random idea from database
   vm.getRandomIdea = function() {
     console.log('get random');

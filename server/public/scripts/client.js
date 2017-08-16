@@ -22,15 +22,6 @@ myApp.config(function($routeProvider, $locationProvider) {
         }
       }
     })
-    .when('/info', {
-      templateUrl: '/views/templates/info.html',
-      controller: 'InfoController',
-      resolve: {
-        getuser: function(UserService) {
-          return UserService.getuser();
-        }
-      }
-    })
     .when('/start', {
       templateUrl: '/views/templates/start.html',
       controller: 'startController as sc',
@@ -70,6 +61,15 @@ myApp.config(function($routeProvider, $locationProvider) {
     .when('/strategy', {
       templateUrl: '/views/templates/strategy.html',
       controller: 'strategyController as sc',
+      resolve: {
+        getuser: function(UserService) {
+          return UserService.getuser();
+        }
+      }
+    })
+    .when('/about', {
+      templateUrl: '/views/templates/about.html',
+      controller: 'aboutController as ac',
       resolve: {
         getuser: function(UserService) {
           return UserService.getuser();

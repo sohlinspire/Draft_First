@@ -115,6 +115,13 @@ li a:hover {
   background-image: url("../vendors/images/pexels-photo-paper.jpeg");
 }
 
+.background-about {
+  height: 800px;
+  width: 1500px;
+  margin: 0 auto;
+  background-image: url("../vendors/images/black-and-white-doors.png");
+}
+
 .table1 {
   width: 100%;
   background: rgba(0,0,0,.3);

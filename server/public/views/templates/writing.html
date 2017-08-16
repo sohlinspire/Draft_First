@@ -1,9 +1,9 @@
 <!-- p tag info from organizer ng-model -->
 <header ng-include="'/views/partials/header.html'"></header>
 <div class="background-writing">
-  <div class="row" style="padding: 75px">
+  <div class="row" style="padding: 75px; margin-left: 75px">
     <h1>Writing: Step 1</h1>
-    <div class="col-sm-6" style="font-size: 20px; color: white">
+    <div class="col-sm-5" style="font-size: 20px; color: white">
       <p>Idea: {{wc.data.idea}}</p>
       <p>Who? {{wc.data.who}}</p>
       <p>What? {{wc.data.what}}</p>
@@ -12,24 +12,30 @@
       <p>Why? {{wc.data.why}}</p>
       <p>How? {{wc.data.how}}</p>
     </div>
+    <div class="col-sm-1" style="text-align: right; font-size: 50px; color: blue">&rarr;</div>
     <div class="col-sm-6">
+      <p style="font-size: 20px">Begin your story in the text field below:</p>
       <textarea rows="4" cols="50" ng-model="wc.postStory"></textarea>
-      <a href="#/start" <button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save New Writing</button></a>
+      <a href="#/start" <button class="btn btn-primary" ng-click="wc.addStory(wc.postStory)">Save New Writing</button></a>
       <p style="font-size: 20px">Before heading to Step 2, save your writing.</p>
       <p style="font-size: 20px">Return here using the <img src="../vendors/images/edit_icon.png"> (EDIT) icon located on the next page.</p>
     </div>
   </div>
-  <div class="row" style="padding: 75px">
-    <div class="col-sm-6">
+
+
+  <div class="row" style="padding-left: 150px">
+    <div class="col-sm-5">
       <h1>Editing: Step 2</h1>
       <h2>Try A Strategy To Improve Your Writing</h2>
-      <p></p>
+      <p style="font-size: 20px">Choose a simple sentence in your story to make better.</p>
     </div>
+    <div class="col-sm-1" style="text-align: right; font-size: 50px; color: blue">&rarr;</div>
     <div class="col-sm-6">
       <textarea rows="4" cols="50" ng-model="wc.data.story.writing"></textarea>
-      <a href="#/start" <button class="btn btn-primary btn-lg" ng-click="wc.updateStory(wc.data.story.writing, wc.data.story.id)">Update Writing</button></a>
+      <a href="#/start" <button class="btn btn-primary" ng-click="wc.updateStory(wc.data.story.writing, wc.data.story.id)">Update Writing</button></a>
+      <p style="font-size: 20px">Copy a simple sentence from above and paste it below.</p>
       <textarea type="text" ng-model="wc.data.strategy"></textarea>
-      <a href="#/strategy" <button class="btn btn-primary btn-lg">Submit</button></a>
+      <a href="#/strategy" <button class="btn btn-primary">Submit</button></a>
     </div>
   </div>
 </div>
