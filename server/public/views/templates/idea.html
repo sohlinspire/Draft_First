@@ -4,24 +4,24 @@
       <button type="button" class="btn btn-default" ng-click="ic.instructions()">INSTRUCTIONS</button>
   </div>
 
-<div class="col-sm-6 row"  style="margin-top: 100px; padding-left: 75px">
-  <p style="font-size: 25px; color: white; font-weight: light">Ideas are free. Enter yours below.</p>
+<div class="col-sm-5"  style="padding-top: 85px; padding-left: 75px">
+  <p style="font-size: 25px; font-weight: light">Ideas are free. Enter yours below.</p>
   <!-- text typed on DOM is being sent on click to the organizer controller -->
-  <textarea rows="4" cols="50" ng-model="ic.data.idea" name="" value=""></textarea>
-  <button class="btn btn-primary" onclick="location.href='#/organizer';">Begin Writing</button>
+  <textarea rows="6" cols="50" ng-model="ic.data.idea" name="" value=""></textarea>
+  <button class="btn btn-primary btn-lg" onclick="location.href='#/organizer';">Begin Writing</button>
   <div>
-    <p style="font-size: 18px; color: white; font-weight: light">If you are stuck, click below.</p>
-    <button class="btn btn-primary" ng-click="ic.getRandomIdea()">Choose a Random Topic</button>
-  </div>
-  <div>
-    <p style="font-size: 18px; font-weight: light; margin-top: 100px;">Your ideas are saved here.</p>
-    <select></select>
+    <p style="font-size: 18px; padding-top: 40px; font-weight: light">If you are stuck, click below.</p>
+    <button class="btn btn-primary btn-lg" ng-click="ic.getRandomIdea()">Choose a Random Topic</button>
   </div>
 </div>
-<div class="col-sm-6 row text-center">
+<div class="col-sm-2">
+  <p style="font-size: 18px; font-weight: light; padding-top: 85px;">Your ideas are saved here.</p>
+  <select></select>
+</div>
+<div class="col-sm-5 text-center">
   <img src="../vendors/images/pexels-photo_ideas.jpg" style="padding-right: 30px;">
-  <p style="padding-right: 85px; text-align: right; font-size: 17px; color: white; font-weight: light">Almost always, great new ideas don't emerge from within a single person or function,
-    but at the intersection of functions or people that have never met before.</p>
+  <p style="padding-right: 85px; text-align: right; font-size: 18px; color: white; font-weight: light">Almost always, great new ideas don't emerge from within a single person or function,
+    but at the intersection of functions or people that have never met.</p>
   <p style="padding-left: 75px; font-size: 20px">-Clayton M. Christensen</p>
 </div>
 

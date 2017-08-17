@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #333333;
 }
 
@@ -69,18 +69,18 @@ body, html {
   border-radius: 0px;
 }
 
-ul {
+.navbar1 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.navbar1 a {
   float: left;
 }
 
-li a {
+.navbar1 a {
   display: block;
   color: black;
   text-align: center;
@@ -89,14 +89,14 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navbar1 a:hover {
   text-decoration: underline;
   color: #eee;
 }
 
 .background-start {
-  height: 1000px;
-  width: 1500px;
+  height: 1159px;
+  width: 1750px;
   margin: 0 auto;
   background-image: url("../vendors/images/handwriting_main.jpg");
 }
@@ -109,8 +109,8 @@ li a:hover {
 }
 
 .background-writing {
-  height: 1000px;
-  width: 1500px;
+  height: 1159px;
+  width: 1750px;
   margin: 0 auto;
   background-image: url("../vendors/images/pexels-photo-paper.jpeg");
 }
@@ -120,6 +120,13 @@ li a:hover {
   width: 1500px;
   margin: 0 auto;
   background-image: url("../vendors/images/black-and-white-doors.png");
+}
+
+.background-intro {
+  height: 970px;
+  width: 1750px;
+  margin: 0 auto;
+  background-image: url("../vendors/images/pexels-photo_desk_plant.jpg");
 }
 
 .table1 {

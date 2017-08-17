@@ -6,7 +6,7 @@ myApp.controller('ideaController', function(UserService, DataService, $http, $lo
   vm.instructions = function(){
     swal({
     title: "Start With An Idea",
-    text: "Coming up wth an idea can be the most difficult part of the writing process. \nIf you have an idea already, enter it in the text box to get started. \nOtherwise, click the button for a random suggestion to get started.",
+    text: "Coming up wth an idea can be the most difficult part of the writing process. If you have an idea already, enter it in the text box to get started. Otherwise, click the button for a random suggestion to get started.",
     imageUrl: "../vendors/images/pexels-photo_chalk.jpg"
     });
   };
@@ -18,5 +18,5 @@ myApp.controller('ideaController', function(UserService, DataService, $http, $lo
       vm.data.idea = response.data.randomIdea[0].topic;
     });
   }; //end of getWritingList()
-  vm.getRandomIdea();
+  // vm.getRandomIdea();
 });

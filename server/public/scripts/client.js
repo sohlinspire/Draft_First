@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ui.bootstrap']);
 
 /// Routes 'ui.bootstrap'///
 myApp.config(function($routeProvider, $locationProvider) {
@@ -67,9 +67,36 @@ myApp.config(function($routeProvider, $locationProvider) {
         }
       }
     })
+    .when('/strategy2', {
+      templateUrl: '/views/templates/strategy-5senses.html',
+      controller: 'strategy2Controller as sc',
+      resolve: {
+        getuser: function(UserService) {
+          return UserService.getuser();
+        }
+      }
+    })
     .when('/about', {
       templateUrl: '/views/templates/about.html',
       controller: 'aboutController as ac',
+      resolve: {
+        getuser: function(UserService) {
+          return UserService.getuser();
+        }
+      }
+    })
+    .when('/intro', {
+      templateUrl: '/views/templates/intro.html',
+      controller: 'introController as ic',
+      resolve: {
+        getuser: function(UserService) {
+          return UserService.getuser();
+        }
+      }
+    })
+    .when('/edit', {
+      templateUrl: '/views/templates/edit.html',
+      controller: 'editController as ec',
       resolve: {
         getuser: function(UserService) {
           return UserService.getuser();
