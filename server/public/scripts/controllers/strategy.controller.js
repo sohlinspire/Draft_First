@@ -8,6 +8,6 @@ myApp.controller('strategyController', function(UserService, DataService, $locat
   sc.transfertext = function(){
     console.log("sc.transfertext");
     sc.data.story.writing = sc.data.story.writing.replace(sc.data.strategy, sc.temptext);
-    $location.path('/writing');
+    $location.path('/edit');
   };
 });

@@ -13,6 +13,7 @@ var startRouter = require ('./routes/start.router');
 var writingRouter = require ('./routes/writing.router');
 var ideaRouter = require ('./routes/idea.router');
 var organizerRouter = require ('./routes/organizer.router');
+var editRouter = require ('./routes/edit.router');
 
 var port = process.env.PORT || 5000;
 
@@ -37,6 +38,7 @@ app.use('/start', startRouter);
 app.use('/writing', writingRouter);
 app.use('/idea', ideaRouter);
 app.use('/organizer', organizerRouter);
+app.use('/edit', editRouter);
 
 
 // Catch all bucket, must be last!
