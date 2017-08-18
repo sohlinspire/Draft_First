@@ -4,6 +4,13 @@ myApp.controller('strategy2Controller', function(UserService, DataService, $loca
   sc.data = DataService.data;
   sc.temptext = '';
 
+  sc.instructions = function(){
+    swal({
+    title: "Strategy: 5 senses",
+    text: "Rich, description is key for an interesting story. This strategy will help you add details to simple sentences.",
+    imageUrl: "../vendors/images/pexels-photo_chalk.jpg"
+    });
+  };
   //takes and replaces old sentence with new sentence
   sc.transfertext = function(){
     console.log("sc.transfertext");

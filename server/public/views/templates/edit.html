@@ -1,9 +1,8 @@
 <header ng-include="'/views/partials/header.html'"></header>
 <div class="background-writing">
-  <div class="row" style="text-align: left; padding-top: 25px; padding-left: 35px">
-      <button type="button" class="btn btn-default">INSTRUCTIONS</button>
+  <div style="text-align: left; padding-top: 25px; padding-left: 35px">
+    <button type="button" class="btn btn-default" ng-click="ec.instructions()">INSTRUCTIONS</button>
   </div>
-
   <div class="row" style="padding-left: 150px">
     <div class="col-sm-5">
       <h1>Editing: Step 2</h1>
@@ -16,7 +15,8 @@
       <a href="#/start"><button class="btn btn-primary" ng-click="ec.updateStory(ec.data.story.writing, ec.data.story.id)">Update Writing</button></a>
       <p style="font-size: 20px">Copy a simple sentence from above and paste it below.</p>
       <textarea type="text" ng-model="ec.data.strategy"></textarea>
-      <a href="#/strategy"><button class="btn btn-primary">Submit</button></a>
+      <a href="#/strategy"><button class="btn btn-primary">strategy 1</button></a>
+      <a href="#/strategy2"><button class="btn btn-primary">strategy 2</button></a>
     </div>
   </div>
 </div>

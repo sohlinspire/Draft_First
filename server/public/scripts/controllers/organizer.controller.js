@@ -5,8 +5,8 @@ myApp.controller('orgController', function(UserService, DataService, $http, $loc
 
   oc.instructions = function(){
     swal({
-    title: "Start With An Idea",
-    text: "",
+    title: "Graphic Organizer",
+    text: "Graphic organizers allow you to develop the content of your story. Answer each of the questions in the space provided. Avoid complete sentences.",
     imageUrl: "../vendors/images/pexels-photo_chalk.jpg"
     });
   };
