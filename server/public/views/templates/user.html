@@ -2,9 +2,9 @@
   <div class="col-sm-5"></div>
 
   <div class="col-sm-2" style="margin-top: 425px">
-    <h1 id="welcome" class="lead">Welcome, {{uc.userObject.userName}}!</h1>
+    <h1 id="welcome" style="font-size: 26px" class="lead">Welcome, {{uc.userObject.userName}}!</h1>
     <div style="padding-bottom: 10px">
-    <button class="btn btn-default" ng-click="uc.userService.logout()">Log Out</button>
+    <button class="btn btn-default btn-lg" ng-click="uc.userService.logout()">Log Out</button>
     </div>
     <!-- button click brings user to start controller to see list of writings-->
     <a href="#/intro"><button class="btn btn-primary btn-lg">Introduction</button></a>

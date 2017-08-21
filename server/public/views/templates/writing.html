@@ -2,37 +2,42 @@
 <header ng-include="'/views/partials/header.html'"></header>
 <div class="background-writing">
   <div style="text-align: left; padding-top: 25px; padding-left: 35px">
-    <button type="button" class="btn btn-default" ng-click="wc.instructions()">INSTRUCTIONS</button>
+    <button type="button" class="btn btn-default btn-lg" ng-click="wc.instructions()">INSTRUCTIONS</button>
   </div>
-  <div class="row">
-    <div class="col-sm-4" style="padding-left: 125px; padding-top: 50px">
-    <h1>Writing</h1>
-    <div style="font-size: 20px; color: white">
-      <p>Idea: {{wc.data.idea}}</p>
-      <p>Who? {{wc.data.who}}</p>
-      <p>What? {{wc.data.what}}</p>
-      <p>Where? {{wc.data.where}}</p>
-      <p>When? {{wc.data.when}}</p>
-      <p>Why? {{wc.data.why}}</p>
-      <p>How? {{wc.data.how}}</p>
+  <div>
+    <div class="col-sm-4" style="padding-left: 125px; padding-top: 25px">
+      <h1>Writing</h1>
+      <div style="color: white">
+        <p><u>Idea</u>: {{wc.data.idea}}</p>
+        <p><u>Who?</u> {{wc.data.who}}</p>
+        <p><u>What?</u> {{wc.data.what}}</p>
+        <p><u>Where?</u> {{wc.data.where}}</p>
+        <p><u>When?</u> {{wc.data.when}}</p>
+        <p><u>Why?</u> {{wc.data.why}}</p>
+        <p><u>How?</u> {{wc.data.how}}</p>
+      </div>
     </div>
+    <div class="col-sm-1" style="padding-top: 100px; font-size: 50px; color: blue">&rarr;</div>
+    <div class="col-sm-7">
+      <p>Begin your story in the text field below:</p>
+      <p>Make sure to save your writing.</p>
+      <textarea rows="10" cols="75" ng-model="wc.postStory"></textarea>
+      <div class="col-sm-4 row">
+        <button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save New Writing</button>
+      </div>
+      <div class="col-sm-4 row">
+        <p>Your story was saved here: </p>
+      </div>
+      <div class="col-sm-4 row">
+        <a href="#/start"><button class="btn btn-primary btn-lg">List of Writings</button></a>
+      </div>
+      <!-- <div class="col-sm-6 row" style="padding-left: 125px">
+        <a href="#/edit"><button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Edit Writing</button></a>
+        <p>Return here using the <img src="../vendors/images/edit_icon.png"> (EDIT) icon located on the next page.</p>
+      </div> -->
     </div>
-    <div class="col-sm-1" style="padding-top: 125px; font-size: 50px; color: blue">&rarr;</div>
-    <div class="col-sm-4" style="padding-top: 75px">
-      <p style="font-size: 20px">Begin your story in the text field below:</p>
-      <p style="font-size: 20px">Make sure to save your writing.</p>
-      <textarea rows="20" cols="50" ng-model="wc.postStory"></textarea>
-      <button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Save New Writing</button>
-      <p style="font-size: 20px">Your story was saved Here:</p>
-      <a href="#/start"><button class="btn btn-primary btn-lg">List of Writings</button></a>
-    </div>
-    <div class="col-sm-3" style="padding-right: 75px; padding-top: 75px">
-      <a href="#/edit" <button class="btn btn-primary btn-lg" ng-click="wc.addStory(wc.postStory)">Edit Writing</button></a>
-      <p style="font-size: 20px">Return here using the <img src="../vendors/images/edit_icon.png"> (EDIT) icon located on the next page.</p>
-    </div>
-
   </div>
-
+</div>
 
 
 

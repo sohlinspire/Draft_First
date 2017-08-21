@@ -10,15 +10,15 @@
     <table class="table1 table-borderless">
       <thead>
           <tr>
-            <th style="padding: 20px; font-size: 50px; font-family: serif; font-weight: lighter; letter-spacing: 2px;">List of Writings</th>
-            <th style="font-family: serif; font-size: 18px; font-weight: lighter; letter-spacing: 2px;">EDIT</th>
-            <th style="font-family: serif; font-size: 18px; font-weight: lighter; letter-spacing: 2px;">DELETE</th>
+            <th style="padding: 20px; font-size: 65px; font-family: serif; color:#999999; font-weight: lighter; letter-spacing: 2px;">List of Writings</th>
+            <th style="font-family: serif; font-weight: lighter; color: white; letter-spacing: 2px;">EDIT</th>
+            <th style="font-family: serif; font-weight: lighter; color: white; letter-spacing: 2px;">DELETE</th>
           </tr>
       </thead>
       <tbody style="font-size: 20px; color: white" ng-repeat="list in sc.writingList">
         <tr class="form-group active">
           <td class="col-sm-8"  style="padding: 12px; letter-spacing: 1px; font-family: serif; font-weight: lighter; font-style: italic">
-            <p class="teaser">{{list.writing | limitTo:100}}...</p>
+            <p class="teaser">{{list.writing | limitTo:85}}...</p>
           </td>
           <td>
             <a href="#/edit">

@@ -6,14 +6,14 @@
       <form ng-submit="lc.registerUser()">
         <div>
           <p style="color: red"> create username and password </p>
-          <label for="username">Username:</label>
+          <label for="username" style="font-family: serif">Username:</label>
           <input type="text" ng-model="lc.user.username" />
         </div>
         <div>
-          <label for="password">Password:</label>
+          <label for="password" style="font-family: serif">Password:</label>
           <input type="password" ng-model="lc.user.password" />
         </div>
-        <input class="btn btn-default" type="submit" name="submit" value="Register" />
+        <input class="btn btn-default btn-lg" type="submit" name="submit" value="Register" />
         <a href="#home">Cancel</a>
       </form>
   </div>
