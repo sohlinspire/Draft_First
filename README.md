@@ -16,8 +16,8 @@ This site will make writing easier by taking you through the writing process. Th
 
 ## Images
 
-![alt text](/server/public/vendors/images/login.png) ![alt text](/server/public/vendors/images/intro.png)
-![alt text](/server/public/vendors/images/writings.png) ![alt text](/server/public/vendors/images/organizer.png)
+![alt text](server/public/vendors/images/login.png) ![alt text](server/public/vendors/images/intro.png)
+![alt text](server/public/vendors/images/writings.png) ![alt text](server/public/vendors/images/organizer.png)
 
 ## Getting Started
 
