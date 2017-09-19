@@ -1,65 +1,101 @@
-# Name of Project
+## Draft_First
 
-One Paragraph of project description goes here. Link to the live version of the app if it's hosted on Heroku.
+This site will make writing easier by taking you through the writing process. The practice begins with help generating an idea. Next, a graphic organizer will be used to develop your idea. These sentence pieces will then be used to start writing your story. Lastly, once your story has some form, there are strategies to help add details to your writing.
 
 ## Built With
 
-List technologies and frameworks here
+- Javascript
+- HTML5
+- CSS3
+- AngularJS
+- PostgreSQL
+- express.js
+- node.js
+- Bootstrap
+- SweetAlerts 2
+
+## Images
+
+![alt text](/server/public/vendors/images/login.png) ![alt text](/server/public/vendors/images/intro.png)
+![alt text](/server/public/vendors/images/writings.png) ![alt text](/server/public/vendors/images/organizer.png)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The following steps will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+## Step 1: Terminal
 
-Link to software that is required to install the app (e.g. node).
+```git
+npm install
+```
+- angular
+- body-parser
+- bootstrap
+- express
+- passport
+- path
+- pg
+- sweetalert2
 
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
+## Step 2: Postico
 
+```SQL
+CREATE DATABASE "mobility_4_all";
 
-### Installing
-
-Steps to get the development environment running.
-
-```sql
 CREATE TABLE "users" (
   "id" serial primary key,
   "username" varchar(80) not null UNIQUE,
   "password" varchar(240) not null
 );
+
+CREATE TABLE "user_writing" (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES "users",
+  writing VARCHAR (100000)
+);
+
+CREATE TABLE "random_topic" (
+id SERIAL PRIMARY KEY,
+topic VARCHAR (100000)
+);
 ```
 
-## Screen Shot
+## Scope Documentation
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+https://docs.google.com/document/d/1ehLONJMm7I3KzVSO14k5drDuOym85J-id2RGZ5BLshI/edit#
 
-## Documentation
-
-Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
-
-### Completed Features
+## Completed Features
 
 High level list of items completed.
 
-- [x] Feature a
-- [x] Feature b
+- [x] Setup sql tables (user and writing) and columns, and create and insert dummy data.
+- [x] Create start.html: “list of writings” table and “new writing” button
+- [x] Setup GET: start.js and server communication
+- [x] Connect start.js to database and GET dummy data on the DOM
+- [x] Create ideas.html and connect to “new writing” button
+- [x] Create organizer.html and connect to “begin writing” buttons
+- [x] Create writing.html and connect to start writing button
+- [x] Connect “save” button to start.html
+- [x] Data binding for inputs on idea.html, organizers.html
+- [x] Service for controllers idea.html, organizers.html
+- [x] Data binding from organizers to writing
+- [x] Set up POST: writing.js and server communicationls
+- [x] Connect writing.js to start.js and POST real data on the DOM
+- [x] Set up PUT: start.html/database to writing.html
+- [x] Set up DELETE on start.html
+- [x] Bootstrap to format
+- If things go well, start stretch goals here, til the end
+- [x] Random prompt generator on the ideas page.
+- [x] The ability to take a sentence from their writing and insert it into the Stretch Strategy to improve the details in their writing.
+- [x] Idea helper dropdown on the ideas page.
+- [x] Deploy to Heroku
 
-### Next Steps
+## Next Steps:
 
-Features that you would like to add at some point in the future.
-
-- [ ] Feature c
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+- [] Ability to export story to google docs
+- [] Store ideas in dropdown on Ideas page
+- [] Add more Strategy options to improve writing
 
 ## Authors
 
-* Name of author(s)
-
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
+*David Krueger
